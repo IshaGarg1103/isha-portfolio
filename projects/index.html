@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>projects · isha garg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Nunito:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <nav class="nav" aria-label="Primary navigation">
+        <div class="nav-logo">
+          <a href="../about/">isha garg</a>
+        </div>
+        <div class="nav-links">
+          <a href="../about/">about</a>
+          <a href="../work/">work</a>
+          <a href="./" class="on">projects</a>
+        </div>
+      </nav>
+
+      <main>
+        <section class="page-section first-section">
+          <div class="head-row">
+            <h1 class="page-title projects-title">projects</h1>
+          </div>
+          <div class="pinboard project-pinboard">
+            <article class="pin project-pin">
+              <div class="pin-name">zero-rl</div>
+              <p class="pin-desc">
+                A compact R1-Zero-style post-training experiment for Countdown.
+                It trains Qwen2.5-3B with GRPO using strict programmatic rewards:
+                no supervised traces, no reward model, and no LLM judge.
+              </p>
+              <p class="pin-desc">
+                The interesting bit is the transfer test: train on 3-number
+                problems, then evaluate on both 3-number and harder 4-number
+                prompts. The final run hit 68.46% solve rate on held-out
+                3-number examples on an AMD MI300X GPU, with vLLM bringing the
+                observed 3B step time down to roughly 8.1 seconds. It also
+                surfaced a clear generalization gap on 4-number transfer.
+              </p>
+              <div class="pin-foot">
+                <div class="pin-stack">
+                  Python<span class="sep">·</span>GRPO<span class="sep">·</span>Qwen2.5
+                </div>
+                <div class="pin-links">
+                  <a href="https://github.com/IshaGarg1103/zero-rl" target="_blank" rel="noopener">repo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="pin project-pin">
+              <div class="pin-name">cursor-lens</div>
+              <p class="pin-desc">
+                A local-first CLI for understanding how people work with coding
+                agents. It reads Cursor transcript files, computes workflow
+                metrics, applies privacy filtering, and generates private Markdown
+                and HTML reports.
+              </p>
+              <p class="pin-desc">
+                The tool keeps raw transcripts local by default, supports optional
+                AI-generated builder profiles, and makes agent workflows easier to
+                inspect through sessions, prompts, tool calls, and file references.
+              </p>
+              <div class="pin-foot">
+                <div class="pin-stack">
+                  TypeScript<span class="sep">·</span>CLI<span class="sep">·</span>privacy
+                </div>
+                <div class="pin-links">
+                  <a href="https://github.com/IshaGarg1103/cursor-lens" target="_blank" rel="noopener">repo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="pin project-pin">
+              <div class="pin-name">nanogpt-hack</div>
+              <p class="pin-desc">
+                A small nanoGPT-style pretraining playground built to understand
+                the training loop end to end: dataset prep, configs, checkpointing,
+                WandB logging, and controlled ablations.
+              </p>
+              <p class="pin-desc">
+                Uses a 100M-token mix of FineWeb-Edu, Cosmopedia, and Python code
+                at roughly 30M parameters. The cleanest result was RoPE + AdamW,
+                improving validation loss under the same token budget.
+              </p>
+              <div class="pin-foot">
+                <div class="pin-stack">
+                  Python<span class="sep">·</span>pretraining<span class="sep">·</span>RoPE
+                </div>
+                <div class="pin-links">
+                  <a href="https://github.com/IshaGarg1103/nanogpt-hack" target="_blank" rel="noopener">repo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="foot">
+        <div class="elsewhere-title">Elsewhere</div>
+        <div class="socials">
+          <a href="#" aria-label="Resume link coming soon">resume</a>
+          <a href="mailto:ishagarg.1103@gmail.com" aria-label="Email Isha">email</a>
+          <a href="https://x.com/slowdownisha" target="_blank" rel="noopener">twitter/x</a>
+          <a href="https://github.com/IshaGarg1103" target="_blank" rel="noopener">github</a>
+          <a href="https://www.linkedin.com/in/isha-garg-300354285/" target="_blank" rel="noopener">linkedin</a>
+        </div>
+        <div class="copy">© isha garg</div>
+      </footer>
+    </div>
+  </body>
+</html>
