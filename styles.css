@@ -169,10 +169,6 @@ strong {
   text-align: left;
 }
 
-.welcome {
-  color: var(--rose-dark);
-}
-
 .featured {
   width: min(520px, 100%);
   margin: 4px auto 24px;
