@@ -58,6 +58,31 @@
             </article>
 
             <article class="pin project-pin">
+              <div class="pin-name">concise-CoT</div>
+              <p class="pin-desc">
+                Length-controlled reasoning distillation from Qwen3-32B into a
+                compact Qwen3-4B LoRA student. It generates verified GSM8K teacher
+                traces, rewrites them into L1/L2/L3 reasoning budgets, re-verifies
+                correctness, and trains one student to follow those budgets.
+              </p>
+              <p class="pin-desc">
+                The fixed vLLM LoRA eval maps the accuracy-vs-token Pareto curve:
+                L0 reaches 93.6% accuracy, while L2 is the best compressed point at
+                88.8% accuracy with about 99 generated tokens. Structural analysis
+                suggests compression removes prose-like reasoning before
+                calculation-like steps.
+              </p>
+              <div class="pin-foot">
+                <div class="pin-stack">
+                  Python<span class="sep">·</span>LoRA SFT<span class="sep">·</span>vLLM
+                </div>
+                <div class="pin-links">
+                  <a href="https://github.com/IshaGarg1103/concise-cot" target="_blank" rel="noopener">repo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="pin project-pin">
               <div class="pin-name">cursor-lens</div>
               <p class="pin-desc">
                 A local-first CLI for understanding how people work with coding
@@ -108,10 +133,11 @@
       <footer class="foot">
         <div class="elsewhere-title">Trails</div>
         <div class="socials">
-          <a href="#" aria-label="Resume link coming soon">resume</a>
+          <a href="https://drive.google.com/file/d/1Si1wvsBALRwBTlq54SW_ttnBL55pA_Xc/view?usp=sharing" target="_blank" rel="noopener">resume</a>
           <a href="mailto:ishagarg.1103@gmail.com" aria-label="Email Isha">email</a>
-          <a href="https://x.com/slowdownisha" target="_blank" rel="noopener">twitter/x</a>
           <a href="https://github.com/IshaGarg1103" target="_blank" rel="noopener">github</a>
+          <a href="https://huggingface.co/ishagarg1103" target="_blank" rel="noopener">huggingface</a>
+          <a href="https://x.com/slowdownisha" target="_blank" rel="noopener">twitter</a>
           <a href="https://www.linkedin.com/in/isha-garg-300354285/" target="_blank" rel="noopener">linkedin</a>
         </div>
         <div class="copy">© isha garg</div>
