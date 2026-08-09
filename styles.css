@@ -169,6 +169,29 @@ strong {
   text-align: left;
 }
 
+.about-intro p {
+  margin: 0 0 18px;
+}
+
+.about-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.about-intro a {
+  color: var(--green);
+  font-family: "Space Mono", monospace;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.about-intro a:hover {
+  color: var(--ink);
+}
+
+.about-intro .email-link {
+  color: var(--rose-dark);
+}
+
 .featured {
   width: min(520px, 100%);
   margin: 4px auto 24px;
@@ -418,8 +441,13 @@ strong {
 }
 
 .work-item {
+  margin-bottom: 28px;
   padding-bottom: 28px;
   border-bottom: 1px solid var(--border);
+}
+
+.work-item:last-child {
+  margin-bottom: 0;
 }
 
 .work-title {
